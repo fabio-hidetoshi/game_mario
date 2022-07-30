@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Mário</title>
+</head>
+<body>
+    <div class="game">
+        <img src="./Imagens/clouds.png" class="clouds">
+        <img src="./Imagens/mario.gif" class="mario">
+        <img src="./Imagens/pipe.png" class="pipe">
+
+        <div class="buttom reset game-over">
+            <button>RESET</button>
+            <img src="./Imagens/game-over-legend.png">
+        </div>
+    </div>
+
+    <div class="chao"></div> 
+
+    <audio preload= "metadata" autoplay loop id="play">
+        <source src="./midia/mario-sound.wav" type="audio/wav">
+    </audio>
+
+
+    <audio preload= "metadata" id="lose">
+        <source src="./midia/mario-sound-lose.wav" type="audio/wav">
+    </audio>
+
+    <audio preload = "metadata" id="jump">
+        <source src="./midia/mario-jump.wav" type="audio/wav">
+    </audio>
+
+</body>
+<script src="scripts.js"></script>
+</html>
